@@ -1,0 +1,68 @@
+"""Authoritative S/M profile cases used by unified architecture tests."""
+
+PROFILE_CASES = (
+    {
+        "profile": "S00_STATIC_CLEAR",
+        "artifact_protocol": "ch3_mission_v1",
+        "moving": False,
+        "use_obstacles": False,
+        "knowledge_mode": "known",
+        "planner_mode": "grid_astar_v1",
+    },
+    {
+        "profile": "S10_MOVING_CLEAR",
+        "artifact_protocol": "ch3_mission_v1",
+        "moving": True,
+        "use_obstacles": False,
+        "knowledge_mode": "known",
+        "planner_mode": "grid_astar_v1",
+    },
+    {
+        "profile": "S01_STATIC_OBSTACLE",
+        "artifact_protocol": "ch3_mission_v1",
+        "moving": False,
+        "use_obstacles": True,
+        "knowledge_mode": "known",
+        "planner_mode": "grid_astar_v1",
+    },
+    {
+        "profile": "S11_MOVING_OBSTACLE",
+        "artifact_protocol": "ch3_mission_v1",
+        "moving": True,
+        "use_obstacles": True,
+        "knowledge_mode": "known",
+        "planner_mode": "grid_astar_v1",
+    },
+    {
+        "profile": "M00_MOVING_CLEAR",
+        "artifact_protocol": "ch3_unknown_map_v1",
+        "moving": True,
+        "use_obstacles": False,
+        "knowledge_mode": "online_unknown",
+        "planner_mode": "online_astar_v1",
+    },
+    {
+        "profile": "M10_MOVING_UNKNOWN_SINGLE",
+        "artifact_protocol": "ch3_unknown_map_v1",
+        "moving": True,
+        "use_obstacles": True,
+        "knowledge_mode": "online_unknown",
+        "planner_mode": "online_astar_v1",
+    },
+    {
+        "profile": "M20_MOVING_UNKNOWN_MULTI",
+        "artifact_protocol": "ch3_unknown_map_v1",
+        "moving": True,
+        "use_obstacles": True,
+        "knowledge_mode": "online_unknown",
+        "planner_mode": "online_astar_v1",
+    },
+    {
+        "profile": "M90_MOVING_KNOWN_ORACLE",
+        "artifact_protocol": "ch3_unknown_map_v1",
+        "moving": True,
+        "use_obstacles": True,
+        "knowledge_mode": "oracle",
+        "planner_mode": "oracle_astar_v1",
+    },
+)
